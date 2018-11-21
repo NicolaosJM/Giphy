@@ -17,7 +17,7 @@ $(document).on("click", ".letter-button", function () {
 
     var letter = $(this).attr("data-letter")
 
-    var queryURL = `http://api.giphy.com/v1/gifs/search?q=${letter}&api_key=9dhDLZG9Xr2NAxd2paCSxJCUyTIzgzzm&limit=10`
+    var queryURL = `https://api.giphy.com/v1/gifs/search?q=${letter}&api_key=9dhDLZG9Xr2NAxd2paCSxJCUyTIzgzzm&limit=10`
     $.ajax({
         url: queryURL,
         method: "GET"
